@@ -1,0 +1,40 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+    padding: 30px 100px;
+}
+div{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+   
+button{
+    
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: none;       
+}
+.button1{
+    background-color: darkslategray;
+}
+.button2{
+    background-color: coral;
+}
+.button3{
+    background-color: darkmagenta;
+}
+.button1:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+.button3:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
