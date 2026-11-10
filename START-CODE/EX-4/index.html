@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+
+        }
+        body{
+            background-color: #e9eef8;
+        }
+        .dashboard{
+            display: flex;
+            min-height: 100vh;
+            padding: 20px;
+            gap: 20px;
+        }
+        .sidebar{
+            width:220px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .sidebar h2{
+            margin-bottom: 30px;
+            color: #315995;
+        }
+        .sidebar a{
+            display: block;
+            text-decoration: none;
+            color: #555;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .sidebar a:hover{
+            background: #e8effa;
+            color: #315995;
+        }
+        .main{
+            flex:1;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            min-width: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .header input{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .card{
+            background: #f0f4fa;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .card h2{
+            color: #315995;
+            margin-bottom: 8px;
+        }
+        .table-container{
+            overflow-x: auto;
+        }
+        table{
+            width: 100%;
+            
+            min-width: 450px;
+        }
+        th,td{
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th{
+            background: #315995;
+            color: white;
+        }
+        button{
+            background: #315995;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+        }
+        @media(max-width: 700px){
+            .dashboard{
+                flex-direction: column;
+            }
+            .sidebar{
+                width: 100%;
+            }
+            .cards{
+                grid-template-columns: 1fr;
+            }
+            .header{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="dashboard">
+
+       
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+
+            <a href="#">Home</a>
+            <a href="#">Analytics</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+        </div>
+
+        
+        <div class="main">
+
+            <div class="header">
+                <h1>User Management</h1>
+                <input type="text" placeholder="Search user...">
+            </div>
+
+           
+            <div class="cards">
+
+                <div class="card">
+                    <h2>124</h2>
+                    <p>Total Users</p>
+                </div>
+
+                <div class="card">
+                    <h2>36</h2>
+                    <p>Admins</p>
+                </div>
+
+                <div class="card">
+                    <h2>86</h2>
+                    <p>Managers</p>
+                </div>
+
+            </div>
+
+           
+            <h2 style="margin-bottom: 15px;">User List</h2>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>Devon Lane</td>
+                        <td>devon@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leslie Alexander</td>
+                        <td>leslie@gmail.com</td>
+                        <td>Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ralph Edwards</td>
+                        <td>ralph@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane Cooper</td>
+                        <td>jane@gmail.com</td>
+                        <td>Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</html>
