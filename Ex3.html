@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+    <style>
+        .header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        .object{
+            display: grid;
+            grid-template-columns: auto;
+            margin: 10px;
+            padding: 15px;
+        }
+        .Main{
+            background-color: rgb(179, 179, 179);
+            padding: 15px;
+            margin: 10px;
+        }
+        .Sidebar{
+            background-color: rgb(179, 179, 179);
+            padding: 15px;
+            margin: 10px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        @media(min-width:600px) and (max-width:900px){
+            .object{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(min-width:900px){
+            .object{
+                grid-template-columns: 1fr 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header class="header">Responsive Header</header> 
+   <div class="object">
+        <div class="Main">Main Content</div>
+        <div class="Sidebar">Sidebar</div>
+   </div>
+   <footer class="footer">Footer</footer>
+</body>
+</html>
