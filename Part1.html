@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+    <style>
+        /* challenge 1*/
+        input:focus{
+            border: 2px solid blue;
+            outline: none;
+        }
+        /* challenge 2 */
+        button{
+            background-color: blue;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: rgb(101, 101, 194);
+        }
+        /* challenge 3 */
+        .Search{
+            padding: 7px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px gray;
+        }
+        /*challenge 4 */
+        input:checked + label{
+            color: rgb(58, 77, 216);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Mini Challenge 1: Highlight input when focused</h3>
+    <input type="text" placeholder="Enter your name">
+
+    <h3>Mini Challenge 2: Change button background color on hover</h3>
+    <button>Click Me</button>
+
+    <h3>Mini Challenge 3: Search bar with rounded corners and shadow</h3>
+    <input type="text" placeholder="Search..." class="Search">
+
+    <h3>Mini Challenge 4: Display different style when the checkbox is checked</h3>
+    <input type="checkbox" id="check">
+
+    <label for="check">I agree</label>
+</body>
+</html>
